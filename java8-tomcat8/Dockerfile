@@ -50,7 +50,7 @@ RUN cd "/tmp" && \
     sed -i 's/Connector port="8080"/Connector port="8080" URIEncoding="UTF-8"/g' "$CATALINA_HOME/conf/server.xml"
 
 RUN apk del build-dependencies && \
-    rm "/tmp"/*
+    rm "/tmp/"*
 
 WORKDIR /usr/local/tomcat
 
